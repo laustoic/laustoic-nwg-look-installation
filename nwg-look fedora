@@ -57,6 +57,9 @@ For this:
 
 extern int dry_run;
 
+To do this, in the folder directory you cloned, edit the file xcur2png.c
+It¨s located at ~/Downloads/xcur2png/xcur2png.c
+
 Then:
 
 make clean
