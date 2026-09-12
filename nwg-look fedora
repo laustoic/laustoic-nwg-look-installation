@@ -14,7 +14,8 @@ libXcursor-devel
 libpng-devel
 golang-github-gotk3-devel
 xcur2png
-Instalar as dependências do Fedora
+
+Install dependencies
 
 sudo dnf install
 git
