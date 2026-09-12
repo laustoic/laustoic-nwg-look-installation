@@ -1,6 +1,6 @@
-INSTALAÇÃO DO NWG-LOOK NO FEDORA
+Installation process
 
-Dependências utilizadas:
+Dependencies:
 
 git
 make
@@ -30,7 +30,7 @@ libXcursor-devel
 libpng-devel
 golang-github-gotk3-devel
 
-Instalar o xcur2png
+Install xcur2png
 
 cd ~/Downloads
 
@@ -42,27 +42,27 @@ cd xcur2png
 make
 sudo make install
 
-Verificar:
+Verify:
 
 which xcur2png
 xcur2png --help
 
-Observação:
-No Fedora, o código do xcur2png apresentou um erro de compilação devido ao código antigo:
+Ps:
+On xcur2png config file, change:
 
 extern dry_run;
 
-Foi necessário alterar para:
+For this:
 
 extern int dry_run;
 
-Depois:
+Then:
 
 make clean
 make
 sudo make install
 
-Baixar o nwg-look
+DOwnload nwg-look
 
 cd ~/Downloads
 
@@ -70,32 +70,30 @@ git clone https://github.com/nwg-piotr/nwg-look.git
 
 cd nwg-look
 
-Para utilizar a release 1.1.1:
-
 git checkout v1.1.1
 
-Compilar o nwg-look
+Compile nwg-look
 
 make build
 
-Instalar
+Install
 
 sudo make install
 
-Testar
+Testing
 
 nwg-look
 
-Também é possível verificar:
+Also testing:
 
 nwg-look -v
 nwg-look -h
 
-Verificar o executável:
+Verify executable:
 
 which nwg-look
 
-REPOSITÓRIOS OFICIAIS
+OFFICIAL REPOS
 
 nwg-look:
 https://github.com/nwg-piotr/nwg-look
@@ -103,7 +101,7 @@ https://github.com/nwg-piotr/nwg-look
 xcur2png:
 https://github.com/eworm-de/xcur2png
 
-COMANDOS RESUMIDOS
+COMMANDS
 
 sudo dnf install git make golang gtk3 gtk3-devel glib2-devel cairo-devel cairo-gobject-devel pango-devel libXcursor-devel libpng-devel golang-github-gotk3-devel
 
@@ -120,5 +118,7 @@ cd nwg-look
 git checkout v1.1.1
 make build
 sudo make install
+
+Run:
 
 nwg-look
